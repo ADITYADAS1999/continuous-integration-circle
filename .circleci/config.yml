@@ -2,7 +2,7 @@ version: 2.1
 executors:
   ci-executor:
     docker:
-      - image: githubtraining/ci-custom:latest
+      - image: bundle exec jekyll build
 jobs:
   build:
     executor: ci-executor
